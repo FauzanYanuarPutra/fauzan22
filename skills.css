@@ -1,0 +1,200 @@
+.putih{
+	color: rgb(231,231,232);
+}
+.merah {
+	color: red;
+}
+.kuning{
+	color: yellow
+}
+
+
+*{
+	
+	list-style: none;
+	padding: 0;
+}
+.skills {
+	background: rgb(22,22,29);
+}
+
+.skills {
+	width: 100%;
+	margin: 60px auto;
+	color: white;
+}
+
+.skills li {
+	margin: 20px 0;
+}
+
+.bar {
+	height: 20px;
+	background-color: white;
+	border-radius: 8px;
+
+}
+
+.bar span {
+	height: 10px;
+	float: left;
+	background: #1AFFD6;
+
+}
+
+.html {
+	height: 20px;
+	background-color: #1AFFD6;
+	border-radius: 8px;
+	width: 0;
+	position: relative;
+	width: 90%;
+	animation: html 2s
+}
+
+.css {
+	height: 20px;
+	background-color: #1AFFD6;
+	border-radius: 8px;
+	width: 0;
+	position: relative;
+	width: 20%;
+	animation: css 2s
+}
+
+.jquerty {
+	height: 20px;
+	background-color: #1AFFD6;
+	border-radius: 8px;
+	width: 0;
+	position: relative;
+	width: 0%;
+	animation: jquerty 2s
+}
+.javascript {
+	width: 1%;
+	animation: javascript 2s
+}
+
+@keyframes html {
+	0%{
+		width: 0%
+	}
+	100%{
+		width: 90%
+	}
+}
+
+@keyframes css {
+	0%{
+		width: 0%
+	}
+	100%{
+		width: 20%
+	}
+}
+
+@keyframes jquerty {
+	0%{
+		width: 0%
+	}
+	100%{
+		width: 0%
+	}
+}
+
+@keyframes javascript {
+	0%{
+		width: 0%
+	}
+	100%{
+		width: 1%
+	}
+}
+
+.ukuran-foto {
+	height: 50px;
+	width: 50px
+}
+
+/*batas*/
+
+.margin {
+	width: 100%;
+	max-width: 800px;
+}
+
+.skillss{
+	width: 100%;
+	max-width: 100%;
+	padding: 0 20px;
+
+}
+.skill-name{
+	font-size: 18px;
+	font-weight: 700;
+	color: rgb(231,231,232);
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+.skill-bar {
+	height: 15px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.skill-per{
+	height: 15px;
+	background-color: #1AFFD6;
+	border-radius: 10px;
+	position: relative;
+	animation: fillbars 6s 1;
+}
+
+.skill-per::before{
+	content: attr(per);
+	position: absolute;
+	padding: 4px 6px;
+	background-color: #000;
+	color: inherit;
+	font-size: 12px;
+	border-radius: 4px;
+	top: -35px;
+	right: 0;
+	transform: translateX(50%);
+}
+
+.skill-per::after{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	top: -16px;
+	right: 0;
+	transform: translateX(50%) rotate(45deg);
+	border-radius: 2px;
+
+}
+
+@keyframes fillbars{
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
